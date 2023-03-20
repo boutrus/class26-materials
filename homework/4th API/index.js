@@ -13,7 +13,7 @@ function runApi() {
         createDiv.innerHTML = `
                     <div class="card mb-2 mt-2 ms-2 float-start" style="width: 18rem;">
                         <div class="card-body bg-secondary"">
-                            <h5 class="card-title">${data.entries[n].API}</h5>
+                            <h3 class="card-title">${data.entries[n].API}</h3>
                             <h6 class="card-subtitle mb-2">${data.entries[n].Category}</h6>
                             <p class="card-text">${data.entries[n].HTTPS}.</p>
                             <p class="card-text">${data.entries[n].Auth}.</p>
@@ -24,15 +24,7 @@ function runApi() {
                     </div>;
                     `
             showInput.appendChild(createDiv);
-            console.log(showInput);
-        console.log(data.entries[n].API);
-        console.log(data.entries[n].Category);
-        console.log(data.entries[n].HTTPS);
-        console.log(data.entries[n].Auth);
-        console.log(data.entries[n].Cors);
-        console.log(data.entries[n].Description);
-        console.log(data.entries[n].Link);
-        console.log(data.entries[n]);
+            console.log(data);
       })
       .catch((err) => {
         console.log(`error ${err}`);
