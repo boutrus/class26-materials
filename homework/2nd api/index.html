@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
@@ -8,48 +8,73 @@
 		<title>Title in the tab</title>
 
 		<!-- external CSS link -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
 	</head>
 	<body>
 
-		<!-- <h1>Enter API</h1>
-		<input type="text" name="" value="">
-		<button type="button" name="button">Get Result</button> -->
-
-        <div id="bpi"> BPI
-            <h2>EUR</h2>
-            <h3 id="symbol"></h3>
-            <h3 id="rate"></h3>
-            <h3 id="description"></h3>
-            <h3 id="rate_float"></h3>
-            <br>
-            <br>
-            <h2>GBP</h2>
-            <h3 id="symbols"></h3>
-            <h3 id="rates"></h3>
-            <h3 id="descriptions"></h3>
-            <h3 id="rate_floats"></h3>
-            <br><br>
-            <h2>USD</h2>
-            <h3 id="symbolss"></h3>
-            <h3 id="ratess"></h3>
-            <h3 id="descriptionss"></h3>
-            <h3 id="rate_floatss"></h3>
-            <br><br>
-
-        </div>
-
-        <div id="others">
-            <h4 id="chartname"></h4>
-            <h4 id="disclaimer"></h4>
-        </div>
-
-		<div id="time"> Time
-		<h3 id="updated">Category</h3><br>
-		<h3 id="updatedISO">Description</h3><br>
-		<h3 id="updatedUK">Link</h3>
+		<div class="container my-5">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<h2>BPI</h2>
+							<h3>EUR</h3>
+							<h4 class="card-title" id="symbol"></h4>
+							<h4 class="card-text" id="rate"></h4>
+							<h4 class="card-text" id="description"></h4>
+							<h4 class="card-text" id="rate_float"></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<h2>BPI</h2>
+							<h3>GBP</h3>
+							<h4 class="card-title" id="symbols"></h4>
+							<h4 class="card-text" id="rates"></h4>
+							<h4 class="card-text" id="descriptions"></h4>
+							<h4 class="card-text" id="rate_floats"></h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<h2>BPI</h2>
+							<h3>USD</h3>
+							<h4 class="card-title" id="symbolss"></h4>
+							<h4 class="card-text" id="ratess"></h4>
+							<h4 class="card-text" id="descriptionss"></h4>
+							<h4 class="card-text" id="rate_floatss"></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title" id="chartname"></h4>
+							<h5 class="card-text" id="disclaimer"></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-body">
+							<h2>Time</h2>
+							<h4 class="card-title" id="updated">Category</h4>
+							<h4 class="card-text" id="updatedISO">Description</h4>
+							<h4 class="card-text" id="updatedUK">Link</h4>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<script type="text/javascript" src="main.js"></script>
-	</body>
-</html>
+		<!-- external JavaScript link -->
+        <script src="main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle
